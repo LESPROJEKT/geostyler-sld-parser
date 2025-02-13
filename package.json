@@ -31,6 +31,7 @@
     "lint:test": "npm run lint && npm run test",
     "lint": "eslint -c .eslintrc.cjs --ext .ts . && tsc --noEmit --project tsconfig.json",
     "prepublishOnly": "npm run lint:test:build",
+    "prepare":"npm run build",
     "test-watch": "vitest",
     "test": "vitest run --coverage"
   },
